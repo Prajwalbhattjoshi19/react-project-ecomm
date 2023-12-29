@@ -1,0 +1,135 @@
+/* CSS code for creating a colorful table with hover effects */
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 70%;
+    align-self: center;
+  }
+  
+  /* Table header styling */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Table row styling */
+  tr:nth-child(even) {
+    background-color: #69aeb8;
+  }
+  
+  /* Table cell styling */
+  td {
+    padding: 8px;
+  }
+  
+  /* Hover effect */
+  tr:hover {
+    background-color: #84fac3;
+  }
+  
+  /* Thick border */
+  table {
+    border: 2px solid #ccc;
+  }
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+  form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  form textarea {
+    height: 100px;
+  }
+  
+  .form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add more properties as needed */
+  .LoginOrRegister{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .Buttons{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 20px;
+    left: 570px;
+  }
+  .ele{
+    align-self: center;
+    
+  }
+  .shareImg{
+    position: absolute;
+    top: 40px;
+    left: 850px;
+  }
+  .shareImg:hover{
+   cursor: pointer; 
+  }
+  .shareCartTab{
+    position: relative;
+    background-color: #9accd4;
+  }
+  .CrossMark{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+  }

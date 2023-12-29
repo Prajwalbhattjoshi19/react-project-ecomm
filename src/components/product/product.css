@@ -1,0 +1,30 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0;
+    background-color: white;
+  }
+  
+  .prods {
+    width: 23%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: gray;
+  }
+  
+  .prods button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .prods button:hover {
+    background-color: #0056b3;
+  }
