@@ -20,10 +20,17 @@ function getInitialDotCells(){
 function DotsGame(){
   const[dotCells,setDotCells] = useState(getInitialDotCells());
   const [clickStatus,setClickStatus] = useState({noOfClick:0,moveDone:true,message:''});
-  const onDotClick =()=>{
-   if(clickStatus == "no_click"){
-      setClickStatus("first_click");
-   }else if(clickStatus == "first_click"){
+  const onDotClick =(r,c)=>{
+   if(clickStatus.noOfClick == 0){
+      setClickStatus({noOfClick :1, moveDone:false,message:'',row1:r,col1:c});
+      let newDotCells = dotCells.map(dotCell =>{
+          if(r==dotCell.row && c == dotCell.column){
+             return {...dotCell,color:"red"};
+          }
+         return dotCell;
+      });
+      setDotCells(newDotCells);
+   }else if(clickStatus.noOfClick == 1){
       
    }
   }
