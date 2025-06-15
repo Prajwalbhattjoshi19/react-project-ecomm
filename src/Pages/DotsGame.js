@@ -19,7 +19,14 @@ function getInitialDotCells(){
 }
 function DotsGame(){
   const[dotCells,setDotCells] = useState(getInitialDotCells());
-  const [clickStatus,setClickStatus] = useState("no_click");
+  const [clickStatus,setClickStatus] = useState({noOfClick:0,moveDone:true,message:''});
+  const onDotClick =()=>{
+   if(clickStatus == "no_click"){
+      setClickStatus("first_click");
+   }else if(clickStatus == "first_click"){
+      
+   }
+  }
   return (
     <div className="dots">
      {
