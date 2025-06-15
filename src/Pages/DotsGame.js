@@ -18,5 +18,19 @@ function getInitialDotCells(){
    return output;
 }
 function DotsGame(){
-  const[dotCells,setDotCells] = useState();
+  const[dotCells,setDotCells] = useState(getInitialDotCells());
+  const [clickStatus,setClickStatus] = useState("no_click");
+  return (
+    <div className="dots">
+     {
+      dotCells.map(dot =>{
+       <>
+         <div className="dot" style={{color:dot.color}}/>
+         {dot.drawRightLine && <div className="rightLine"style={{color:dot.rightLineColor}}/>}
+         {dot.drawBottomLine  && <div className="bottomLine"style={{color:dot.bottomLineColor}}/>
+       </>
+       });
+     }
+     </div>
+     );
 }
